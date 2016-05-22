@@ -1,7 +1,7 @@
 package router
 
 import (
-	"myapp/router/item"
+	"github.com/hekike/go-learn/router/item"
 	"github.com/gin-gonic/gin"
 	"gopkg.in/mgo.v2"
 )

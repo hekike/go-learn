@@ -8,8 +8,8 @@ import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	Model "myapp/model"
-	"myapp/lib"
+	Model "github.com/hekike/go-learn/model"
+	"github.com/hekike/go-learn/lib"
 )
 
 // GetById router

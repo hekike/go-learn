@@ -4,7 +4,7 @@ import (
   "time"
   "gopkg.in/mgo.v2"
   "gopkg.in/mgo.v2/bson"
-  Model "myapp/model"
+  Model "github.com/hekike/go-learn/model"
 )
 
 func CreateItem (db *mgo.Database, name string) (Model.Item) {

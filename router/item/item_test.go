@@ -7,9 +7,9 @@ import (
 
   "github.com/gavv/httpexpect"
 
-  "myapp/lib"
-  "myapp/router"
-  "myapp/test"
+  "github.com/hekike/go-learn/lib"
+  "github.com/hekike/go-learn/router"
+  "github.com/hekike/go-learn/test"
 )
 
 func TestItem(t *testing.T) {

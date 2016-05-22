@@ -1,8 +1,8 @@
 package main
 
 import (
-  "myapp/router"
-  "myapp/lib"
+  "github.com/hekike/go-learn/router"
+  "github.com/hekike/go-learn/lib"
 	log "github.com/Sirupsen/logrus"
 )
 
