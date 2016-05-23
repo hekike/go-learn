@@ -8,7 +8,7 @@ import (
 
 // Item model
 type Item struct {
-	ID        bson.ObjectId `bson:"_id,omitempty"`
-	Name      string
-	CreatedAt time.Time `bson:"createdAt"`
+	ID        bson.ObjectId 		`bson:"_id,omitempty" json:"id"`
+	Name      string 						`json:"name"`
+	CreatedAt time.Time 				`bson:"createdAt" json:"createdAt"`
 }

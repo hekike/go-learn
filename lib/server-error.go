@@ -5,9 +5,9 @@ import "net/http"
 import "errors"
 
 type ServerError struct {
-  Error string
-  StatusCode int
-  Message string
+  Error string    `json:"error"`
+  StatusCode int  `json:"statusCode"`
+  Message string  `json:"message"`
 }
 
 var InternalServerError = ServerError{

@@ -28,27 +28,27 @@ func TestItem(t *testing.T) {
   e.GET("/api/items/1").
     Expect().
     Status(http.StatusBadRequest).JSON().Object().Equal(map[string]interface{}{
-      "Error": "Bad Request",
-      "Message": "Invalid ObjectId",
-      "StatusCode": 400,
+      "error": "Bad Request",
+      "message": "Invalid ObjectId",
+      "statusCode": 400,
     })
 
   // test not found
   e.GET("/api/items/56912cbfa233d38145b5ef58").
     Expect().
     Status(http.StatusNotFound).JSON().Object().Equal(map[string]interface{}{
-      "Error": "Not Found",
-      "Message": "Resource is missing",
-      "StatusCode": 404,
+      "error": "Not Found",
+      "message": "Resource is missing",
+      "statusCode": 404,
     })
 
   // test success get
   e.GET("/api/items/" + item.ID.Hex()).
     Expect().
     Status(http.StatusOK).JSON().Object().Equal(map[string]interface{}{
-      "ID": item.ID.Hex(),
-      "Name": item.Name,
-      "CreatedAt": item.CreatedAt,
+      "id": item.ID.Hex(),
+      "name": item.Name,
+      "createdAt": item.CreatedAt,
     })
 
   test.RemoveItemById(db, item.ID)
