@@ -1,3 +1,3 @@
 package test
 
-var TestDbUri = "myapp-test"
+var TestDbUri = "mongodb://localhost:27017/myapp-test"
