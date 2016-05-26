@@ -19,6 +19,7 @@ func Setup(db *mgo.Database) (*gin.Engine) {
 	apiRouter := router.Group("/api")
 	{
 		apiRouter.GET("/items/:itemID", item.GetById)
+		apiRouter.POST("/items", item.Create)
 	}
 
 	return router

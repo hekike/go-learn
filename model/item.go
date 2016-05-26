@@ -9,6 +9,6 @@ import (
 // Item model
 type Item struct {
 	ID        bson.ObjectId 		`bson:"_id,omitempty" json:"id"`
-	Name      string 						`json:"name"`
+	Name      string 						`json:"name" valid:"alphanum,required"`
 	CreatedAt time.Time 				`bson:"createdAt" json:"createdAt"`
 }
